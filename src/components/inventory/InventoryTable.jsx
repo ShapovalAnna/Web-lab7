@@ -4,7 +4,7 @@ export default function InventoryTable({ items, onDelete }) {
     const navigate = useNavigate();
 
     if (!items.length) {
-        return <p style={{ textAlign: "center" }}>Немає даних</p>;
+        return <p style={{ textAlign: "center" }}>No Items</p>;
     }
 
     return (
@@ -23,7 +23,7 @@ export default function InventoryTable({ items, onDelete }) {
                         boxShadow: "0 6px 20px rgba(0,0,0,0.3)",
                     }}
                 >
-                    {/* 📸 Фото */}
+                    {/* Фото */}
                     <div style={{ width: "120px" }}>
                         {item.photo ? (
                             <img
@@ -53,7 +53,7 @@ export default function InventoryTable({ items, onDelete }) {
                         )}
                     </div>
 
-                    {/* 📝 Назва */}
+                    {/* Назва */}
                     <div
                         style={{
                             flex: 1,
@@ -66,7 +66,7 @@ export default function InventoryTable({ items, onDelete }) {
                         {item.inventory_name}
                     </div>
 
-                    {/* 🔘 Кнопки */}
+                    {/* Кнопки */}
                     <div style={{ display: "flex", gap: "12px" }}>
                         <button
                             onClick={() => navigate(`/details/${item.id}`)}
@@ -112,19 +112,19 @@ const baseBtn = {
     transition: "0.2s",
 };
 
-// 🔵 READ
+// READ
 const readBtn = {
     ...baseBtn,
     background: "#92b1e3",
 };
 
-// 🟡 EDIT
+//  EDIT
 const editBtn = {
     ...baseBtn,
     background: "#5e97e3",
 };
 
-// 🔴 DELETE
+// DELETE
 const deleteBtn = {
     ...baseBtn,
     background: "#f66a6a",

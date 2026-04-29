@@ -18,12 +18,12 @@ export default function AdminInventory() {
         loadData();
     }, []);
 
-    // 👉 відкриваємо модалку
+    //  відкриваємо модалку
     const handleDelete = (id) => {
         setConfirmId(id);
     };
 
-    // 👉 підтвердження
+    //  підтвердження
     const confirmDelete = async () => {
         await deleteInventory(confirmId);
         setConfirmId(null);
@@ -58,12 +58,27 @@ export default function AdminInventory() {
                 >
                     Add New item
                 </button>
+                <button
+                    onClick={() => navigate("/gallery")}
+                    style={{
+                        marginLeft: "15px",
+                        background: "#10b981",
+                        color: "white",
+                        padding: "12px 24px",
+                        borderRadius: "12px",
+                        border: "none",
+                        cursor: "pointer",
+                        fontSize: "16px",
+                    }}
+                >
+                    Open Gallery
+                </button>
             </div>
 
-            {/* 📋 Таблиця */}
+            {/*  Таблиця */}
             <InventoryTable items={items} onDelete={handleDelete} />
 
-            {/* 🧠 МОДАЛКА */}
+            {/*  МОДАЛКА */}
             {confirmId && (
                 <ConfirmModal
                     onConfirm={confirmDelete}

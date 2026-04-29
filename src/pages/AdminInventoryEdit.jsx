@@ -42,7 +42,7 @@ export default function AdminInventoryEdit() {
 
             <div style={card}>
 
-                {/* 📷 Фото */}
+                {/* Фото */}
                 <label style={photoBox}>
                     {photo ? (
                         <img src={URL.createObjectURL(photo)} style={imgStyle} />
@@ -59,7 +59,7 @@ export default function AdminInventoryEdit() {
                     />
                 </label>
 
-                {/* 📝 Назва */}
+                {/* Назва */}
                 <input
                     value={item.inventory_name}
                     onChange={(e) =>
@@ -68,7 +68,7 @@ export default function AdminInventoryEdit() {
                     style={nameInput}
                 />
 
-                {/* 📄 Опис */}
+                {/* Опис */}
                 <textarea
                     value={item.description}
                     onChange={(e) =>
@@ -77,7 +77,7 @@ export default function AdminInventoryEdit() {
                     style={descInput}
                 />
 
-                {/* 💾 Кнопка */}
+                {/* Кнопка */}
                 <button onClick={handleUpdate} style={saveBtn}>
                     save
                 </button>
@@ -87,7 +87,7 @@ export default function AdminInventoryEdit() {
 }
 
 //
-// 🎨 СТИЛІ
+//  СТИЛІ
 //
 
 const wrapper = {

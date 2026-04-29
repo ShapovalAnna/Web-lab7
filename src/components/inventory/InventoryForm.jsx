@@ -77,7 +77,7 @@ const card = {
     background: "#d1d5db",
     borderRadius: "20px",
     padding: "40px",
-    width: "800px", // 🔥 ФІКС ШИРИНИ
+    width: "800px",
     display: "flex",
     gap: "40px",
     alignItems: "center",
@@ -125,7 +125,7 @@ const nameInput = {
 };
 
 const descInput = {
-    width: "400px", // 🔥 ОБМЕЖИЛИ
+    width: "400px",
     height: "200px",
     padding: "20px",
     borderRadius: "12px",
@@ -136,7 +136,7 @@ const descInput = {
 };
 
 const saveBtn = {
-    width: "400px", // 🔥 ЩОБ НЕ ВИЛАЗИЛА
+    width: "400px",
     padding: "16px",
     borderRadius: "14px",
     border: "none",

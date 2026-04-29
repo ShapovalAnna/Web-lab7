@@ -17,15 +17,15 @@ export default function AdminInventoryDetails() {
     return (
         <div style={{ textAlign: "center", marginTop: "40px" }}>
 
-            {/* 🔙 Назад */}
+            {/* Назад */}
             <button onClick={() => navigate("/")} style={backBtn}>
                 ←  Go back
             </button>
 
-            {/* 📦 КАРТОЧКА */}
+            {/* КАРТОЧКА */}
             <div style={card}>
 
-                {/* 📸 ФОТО */}
+                {/*  ФОТО */}
                 <div style={photoBox}>
                     {item.photo ? (
                         <img src={item.photo} style={imgStyle} />
@@ -34,7 +34,7 @@ export default function AdminInventoryDetails() {
                     )}
                 </div>
 
-                {/* 📝 ПРАВА ЧАСТИНА */}
+                {/*  ПРАВА ЧАСТИНА */}
                 <div style={rightSide}>
 
                     <h2 style={title}>

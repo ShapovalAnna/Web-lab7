@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// 📁 uploads
+// uploads
 app.use("/uploads", express.static("uploads"));
 
 // multer
@@ -25,14 +25,14 @@ const upload = multer({ storage });
 let inventory = [];
 
 // =======================
-// ✅ GET ALL
+// GET ALL
 // =======================
 app.get("/inventory", (req, res) => {
     res.json(inventory);
 });
 
 // =======================
-// ✅ GET BY ID
+// GET BY ID
 // =======================
 app.get("/inventory/:id", (req, res) => {
     const item = inventory.find(i => i.id == req.params.id);
@@ -45,7 +45,7 @@ app.get("/inventory/:id", (req, res) => {
 });
 
 // =======================
-// ✅ CREATE (з фото)
+// CREATE (з фото)
 // =======================
 app.post("/register", upload.single("photo"), (req, res) => {
     const newItem = {
@@ -62,7 +62,7 @@ app.post("/register", upload.single("photo"), (req, res) => {
 });
 
 // =======================
-// ✅ UPDATE TEXT
+// UPDATE TEXT
 // =======================
 app.put("/inventory/:id", (req, res) => {
     const item = inventory.find(i => i.id == req.params.id);
@@ -78,7 +78,7 @@ app.put("/inventory/:id", (req, res) => {
 });
 
 // =======================
-// ✅ UPDATE PHOTO
+// UPDATE PHOTO
 // =======================
 app.put("/inventory/:id/photo", upload.single("photo"), (req, res) => {
     const item = inventory.find(i => i.id == req.params.id);
@@ -95,7 +95,7 @@ app.put("/inventory/:id/photo", upload.single("photo"), (req, res) => {
 });
 
 // =======================
-// ✅ DELETE
+// DELETE
 // =======================
 app.delete("/inventory/:id", (req, res) => {
     inventory = inventory.filter(i => i.id != req.params.id);

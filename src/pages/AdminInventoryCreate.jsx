@@ -32,7 +32,7 @@ export default function AdminInventoryCreate() {
 
             <div style={card}>
 
-                {/* 📷 Фото */}
+                {/* Фото */}
                 <label style={photoBox}>
                     {photo ? (
                         <img src={URL.createObjectURL(photo)} style={imgStyle} />
@@ -47,7 +47,7 @@ export default function AdminInventoryCreate() {
                     />
                 </label>
 
-                {/* 📝 Назва */}
+                {/* Назва */}
                 <input
                     placeholder="name"
                     value={name}
@@ -55,7 +55,7 @@ export default function AdminInventoryCreate() {
                     style={nameInput}
                 />
 
-                {/* 📄 Опис */}
+                {/* Опис */}
                 <textarea
                     placeholder="description"
                     value={desc}
@@ -63,7 +63,7 @@ export default function AdminInventoryCreate() {
                     style={descInput}
                 />
 
-                {/* 💾 Кнопка */}
+                {/*  Кнопка */}
                 <button onClick={handleSubmit} style={saveBtn}>
                     save
                 </button>
@@ -73,7 +73,7 @@ export default function AdminInventoryCreate() {
 }
 
 //
-// 🎨 СТИЛІ (такі ж як у Edit)
+// СТИЛІ
 //
 
 const wrapper = {
