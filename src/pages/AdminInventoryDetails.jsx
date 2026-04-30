@@ -109,9 +109,12 @@ const title = {
 };
 
 const descBox = {
+    width: "400px",
     background: "#9ca3af",
     padding: "20px",
     borderRadius: "12px",
-    minHeight: "120px",
+    minHeight: "150px",
     color: "#000",
+    wordBreak: "break-word",
+    overflowWrap: "break-word",
 };

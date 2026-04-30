@@ -13,7 +13,7 @@ export default function AdminInventory() {
         const data = await getInventory();
         setItems(data);
     };
-
+//хук
     useEffect(() => {
         loadData();
     }, []);
