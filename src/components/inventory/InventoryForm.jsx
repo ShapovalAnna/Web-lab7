@@ -66,7 +66,6 @@ export default function InventoryForm({ onSubmit }) {
     );
 }
 
-// 🎨 ФІКС ЛЕЙАУТУ
 
 const outer = {
     display: "flex",

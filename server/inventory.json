@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1778079456992,
+    "inventory_name": "flower 1",
+    "description": "red",
+    "photo": "http://localhost:3000/uploads/1778079456985-f2.jpg"
+  },
+  {
+    "id": 1778079470574,
+    "inventory_name": "flower 2",
+    "description": "blue",
+    "photo": "http://localhost:3000/uploads/1778079470571-f3.jpg"
+  },
+  {
+    "id": 1778079490636,
+    "inventory_name": "flower 3",
+    "description": "big and red\r\n",
+    "photo": "http://localhost:3000/uploads/1778079490632-f4.jpg"
+  },
+  {
+    "id": 1778079504579,
+    "inventory_name": "flower 4",
+    "description": "pink",
+    "photo": "http://localhost:3000/uploads/1778079504544-f5.jpg"
+  },
+  {
+    "id": 1778079518879,
+    "inventory_name": "flower 5",
+    "description": "white",
+    "photo": "http://localhost:3000/uploads/1778079518877-f6.jpg"
+  },
+  {
+    "id": 1778079535131,
+    "inventory_name": "flower 6",
+    "description": "white",
+    "photo": "http://localhost:3000/uploads/1778079535129-lily.jpg"
+  }
+]

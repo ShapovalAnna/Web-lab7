@@ -33,7 +33,7 @@ export default function AdminInventory() {
     return (
         <div>
 
-            {/* 🔝 Закріплена кнопка */}
+            {/* Закріплена кнопка */}
             <div
                 style={{
                     position: "sticky",
@@ -58,21 +58,7 @@ export default function AdminInventory() {
                 >
                     Add New item
                 </button>
-                <button
-                    onClick={() => navigate("/gallery")}
-                    style={{
-                        marginLeft: "15px",
-                        background: "#10b981",
-                        color: "white",
-                        padding: "12px 24px",
-                        borderRadius: "12px",
-                        border: "none",
-                        cursor: "pointer",
-                        fontSize: "16px",
-                    }}
-                >
-                    Open Gallery
-                </button>
+
             </div>
 
             {/*  Таблиця */}
